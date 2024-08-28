@@ -3,6 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from "bcrypt";
 
 export const authOptions = {
+
     providers: [
       CredentialsProvider({
           name: 'Credentials',
@@ -62,5 +63,6 @@ export const authOptions = {
             return session
         }
     }
+    
   }
  
