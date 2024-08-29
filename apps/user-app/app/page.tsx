@@ -9,7 +9,8 @@ export default async function Page() {
   
   if (session?.user) {
     redirect('/dashboard')
-  } else {
+  } 
+  else {
     redirect('/api/auth/signin')
   }
 }
